@@ -884,6 +884,14 @@
             <hydraulic template="DEFAULT_HYDRAULIC_SOUND"/>
         </sounds>
     </cylindered>
+    <licensePlates>
+        <licensePlate node="licensePlate" position="BACK" preferedType="ELONGATED" placementArea="0.07 0.18 0.14 0.18"/>
+    </licensePlates>
+    <tipOccluder>
+        <occlusionArea start="tipOcclusionArea1Start" width="tipOcclusionArea1Width" height="tipOcclusionArea1Height" />
+        <occlusionArea start="tipOcclusionArea2Start" width="tipOcclusionArea2Width" height="tipOcclusionArea2Height" />
+        <occlusionArea start="tipOcclusionArea3Start" width="tipOcclusionArea3Width" height="tipOcclusionArea3Height" />
+    </tipOccluder>
     <foliageBending>
         <bendingNode minX="-1.35" maxX="1.35" minZ="-4.9" maxZ="2.55" yOffset="0.6"/>
     </foliageBending>
@@ -1130,6 +1138,13 @@
     <i3dMappings>
         <i3dMapping id="itRunner_main_component1" node="0>"/>
         <i3dMapping id="towHolder" node="0>0|5|3|0"/>
+        <i3dMapping id="licensePlate" node="0>0|9"/>
+        <i3dMapping id="tipOcclusionArea2Start" node="0>0|8|1|0"/>
+        <i3dMapping id="tipOcclusionArea1Start" node="0>0|8|0|0"/>
+        <i3dMapping id="tipOcclusionArea1Width" node="0>0|8|0|0|0"/>
+        <i3dMapping id="tipOcclusionArea2Width" node="0>0|8|1|0|0"/>
+        <i3dMapping id="tipOcclusionArea1Height" node="0>0|8|0|0|1"/>
+        <i3dMapping id="tipOcclusionArea2Height" node="0>0|8|1|0|1"/>
         <i3dMapping id="wheelChockSupportRight01" node="0>0|0|6|0"/>
         <i3dMapping id="wheelChockRight01" node="0>0|0|6|0|0"/>
         <i3dMapping id="wheelChockSupportRight02" node="0>0|0|6|1"/>
