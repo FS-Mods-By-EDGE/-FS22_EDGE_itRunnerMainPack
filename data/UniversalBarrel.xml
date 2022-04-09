@@ -80,6 +80,7 @@
         </animation>
         <animation name="fillLevel">
             <part node="fillLevel_Lever00" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -180" />
+            <part node="fillLevel_Lever" startTime="0" endTime="1" startRot="0 0 0" endRot="-90 0 0" />
         </animation>
     </animations>
     <fillUnit>
@@ -529,8 +530,8 @@
         <i3dMapping id="fillLevel" node="0>3" />
         <i3dMapping id="fillLevel_Marker00" node="0>3|0" />
         <i3dMapping id="fillLevel_Lever00" node="0>3|0|0" />
-        <i3dMapping id="fillLevel_Marker01_NeedFix" node="0>3|1" />
-        <i3dMapping id="fillLevel_Lever01" node="0>3|1|0" />
+        <i3dMapping id="fillLevel_Marker" node="0>3|1" />
+        <i3dMapping id="fillLevel_Lever" node="0>3|1|0" />
         <i3dMapping id="colFrame" node="0>4" />
         <i3dMapping id="triggers" node="0>5" />
         <i3dMapping id="fillTrigger" node="0>5|0" />
