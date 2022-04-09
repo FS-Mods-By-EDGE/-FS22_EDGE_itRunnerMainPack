@@ -114,7 +114,7 @@
   </Dynamics>
 
   <Scene>
-      <Shape shapeId="1" name="itRunner_main_component1" translation="0 0 0.401416" dynamic="true" compound="true" collisionMask="8194" density="0.495" clipDistance="300" nodeId="34" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="1" name="itRunner_main_component1" translation="0 0 0.401416" dynamic="true" compound="true" collisionMask="2105346" density="0.495" clipDistance="300" nodeId="34" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
         <Shape shapeId="2" name="itrunner_vis" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="35 66 72 73 74 75 81 82">
           <TransformGroup name="wheels" nodeId="36">
             <TransformGroup name="wheelBackLeft1" translation="0.994 0.613 -0.636" nodeId="37">
@@ -188,9 +188,9 @@
           <TransformGroup name="lights" nodeId="83">
             <TransformGroup name="sharedLights" translation="0 0 -0.401416" nodeId="84">
               <TransformGroup name="workingLightSquare_05" translation="-0.675 0.890754 -4.24827" rotation="0 180 0" nodeId="85"/>
-              <TransformGroup name="workingLightSquare_04" translation="0.675217 0.890754 -4.24827" rotation="0 180 0" nodeId="86"/>
-              <TransformGroup name="rearMultipointLight_01Right" translation="-0.975 0.976 -4.198" rotation="90 180 0" nodeId="87"/>
-              <TransformGroup name="rearMultipointLight_01Left" translation="0.975298 0.976276 -4.19841" rotation="90 180 0" nodeId="88"/>
+              <TransformGroup name="workingLight11" translation="0.675217 0.890754 -4.24827" rotation="0 180 0" nodeId="86"/>
+              <TransformGroup name="rearLight31Right" translation="-0.975 0.976 -4.198" rotation="90 180 0" nodeId="87"/>
+              <TransformGroup name="rearLight31Left" translation="0.975298 0.976276 -4.19841" rotation="90 180 0" nodeId="88"/>
             </TransformGroup>
             <TransformGroup name="staticLights" nodeId="89">
               <Shape shapeId="7" name="sideMarkersStatic" translation="0 1.13518 -4.57754" clipDistance="35" nodeId="90" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
@@ -259,27 +259,27 @@
               </Shape>
             </TransformGroup>
           </Shape>
-          <TransformGroup name="tipOcclusionAreas" translation="0 0 -0.401416" nodeId="192">
-            <TransformGroup name="area1" nodeId="193">
-              <TransformGroup name="tipOcclusionArea1Start" translation="1.18 0 2.76689" nodeId="194">
-                <TransformGroup name="tipOcclusionArea1Width" translation="-2.36 0 0" nodeId="195"/>
-                <TransformGroup name="tipOcclusionArea1Height" translation="0 0 -7.20175" nodeId="196"/>
+          <TransformGroup name="tipOcclusionAreas" translation="0 0 -0.401416" nodeId="133">
+            <TransformGroup name="area1" nodeId="134">
+              <TransformGroup name="tipOcclusionArea1Start" translation="1.18 0 2.76689" nodeId="135">
+                <TransformGroup name="tipOcclusionArea1Width" translation="-2.36 0 0" nodeId="136"/>
+                <TransformGroup name="tipOcclusionArea1Height" translation="0 0 -7.20175" nodeId="137"/>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="area2" nodeId="197">
-              <TransformGroup name="tipOcclusionArea2Start" translation="0.3 0 2.6634" nodeId="198">
-                <TransformGroup name="tipOcclusionArea2Width" translation="-0.6 0 0" nodeId="199"/>
-                <TransformGroup name="tipOcclusionArea2Height" translation="-0.3 0 1.35" nodeId="200"/>
+            <TransformGroup name="area2" nodeId="138">
+              <TransformGroup name="tipOcclusionArea2Start" translation="0.3 0 2.6634" nodeId="139">
+                <TransformGroup name="tipOcclusionArea2Width" translation="-0.6 0 0" nodeId="140"/>
+                <TransformGroup name="tipOcclusionArea2Height" translation="-0.3 0 1.35" nodeId="141"/>
               </TransformGroup>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="licensePlate" translation="0.966169 0.845768 -4.6673" rotation="180 -5.00896e-06 180" nodeId="210"/>
-          <Camera name="persp" translation="1.62197 4.88782 -14.1529" rotation="157.918 12.1247 -180" visibility="false" nodeId="133" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+          <TransformGroup name="licensePlate" translation="0.966169 0.796176 -4.6673" rotation="180 -5.00896e-06 180" scale="1.1 1.1 1" nodeId="142"/>
+          <Camera name="persp" translation="1.5698 2.00837 -7.72075" rotation="157.918 12.1247 -180" visibility="false" nodeId="143" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
         </Shape>
-        <TransformGroup name="collisions" nodeId="134">
-          <Shape shapeId="21" name="colAttacher" translation="-3.8147e-08 0.627 2.25479" visibility="false" compoundChild="true" collisionMask="8194" linearDamping="0.5" angularDamping="0.5" density="0.01" nodeId="135" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="collisions" nodeId="144">
+          <Shape shapeId="21" name="colAttacher" translation="-3.8147e-08 0.627 2.25479" visibility="false" compoundChild="true" collisionMask="8194" linearDamping="0.5" angularDamping="0.5" density="0.01" nodeId="145" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
-        <Camera name="reverseCamera" translation="0 1.45 -5" nodeId="136" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+        <Camera name="reverseCamera" translation="0 1.45 -5" nodeId="146" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
       </Shape>
   </Scene>
 
@@ -287,26 +287,26 @@
     <UserAttribute nodeId="85">
       <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
       <Attribute name="i3d_refBrand" type="string" value="lizard"/>
-      <Attribute name="i3d_refModel" type="string" value="workingLightSquare_04"/>
-      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/workingLightSquare_04.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="workingLight11"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/workingLight11.ma"/>
     </UserAttribute>
     <UserAttribute nodeId="86">
       <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
       <Attribute name="i3d_refBrand" type="string" value="lizard"/>
-      <Attribute name="i3d_refModel" type="string" value="workingLightSquare_04"/>
-      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/workingLightSquare_04.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="workingLight11"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/workingLight11.ma"/>
     </UserAttribute>
     <UserAttribute nodeId="87">
       <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
       <Attribute name="i3d_refBrand" type="string" value="lizard"/>
-      <Attribute name="i3d_refModel" type="string" value="rearMultipointLight_01Right"/>
-      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/rearMultipointLight_01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="rearLight31Right"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/rearLight31.ma"/>
     </UserAttribute>
     <UserAttribute nodeId="88">
       <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
       <Attribute name="i3d_refBrand" type="string" value="lizard"/>
-      <Attribute name="i3d_refModel" type="string" value="rearMultipointLight_01Left"/>
-      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/rearMultipointLight_01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="rearLight31Left"/>
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/lights/lizard/rearLight31.ma"/>
     </UserAttribute>
   </UserAttributes>
 

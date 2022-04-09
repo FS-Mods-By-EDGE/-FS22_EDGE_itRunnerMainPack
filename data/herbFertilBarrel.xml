@@ -27,12 +27,8 @@
         <components>
             <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="1500"/>
         </components>
-        <schemaOverlay attacherJointPosition="0 0">
-            <default name="DEFAULT_IMPLEMENT"/>
-            <turnedOn name="DEFAULT_IMPLEMENT_ON"/>
-            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
-            <turnedOnSelected name="DEFAULT_IMPLEMENT_SELECTED_ON"/>
-        </schemaOverlay>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TRAILER" />
     </base>
     <wheels>
         <wheelConfigurations>
@@ -64,7 +60,7 @@
         <inputAttacherJoints>
             <inputAttacherJoint node="attacher" jointType="hookLift" upperRotationOffset="0" allowsJointRotLimitMovement="false" forceSelectionOnAttach="false"/>
         </inputAttacherJoints>
-        <brakeForce>0.5</brakeForce>
+        <brakeForce force="0.2" maxForce="1.2" maxForceMass="2000"/>
     </attachable>
     <attacherJoints>
         <attacherJointConfigurations title="$l10n_configuration_manhole">
@@ -90,7 +86,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0">
                 <fillUnits>
-                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="30000">
+                    <fillUnit shopDisplayUnit="LITER" allowAILoading="true" fillTypeCategories="sprayer" capacity="30000">
                         <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fillLevel"/>
                         <fillMassNode node="frame_ITR"/>
                         <exactFillRootNode node="exactFillRootNode" />
@@ -106,7 +102,7 @@
             </fillUnitConfiguration>
             <fillUnitConfiguration name="$l10n_configuration_HighPressure" price="10000">
                 <fillUnits>
-                    <fillUnit unit="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="50000">
+                    <fillUnit shopDisplayUnit="LITER" allowAILoading="true" fillTypeCategories="sprayer" capacity="50000">
                         <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fillLevel"/>
                         <fillMassNode node="frame_ITR"/>
                         <exactFillRootNode node="exactFillRootNode" />
@@ -138,16 +134,16 @@
         <sharedLight linkNode="worklight02" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_02_back.xml">
             <rotationNode name="rotationNode1" rotation="15 0 0"/>
         </sharedLight>
-        <sharedLight linkNode="sideMarker_WhiteL01" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteL02" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteL03" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteL04" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteL05" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteR01" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteR02" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteR03" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteR04" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
-        <sharedLight linkNode="sideMarker_WhiteR05" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLightOvalLEDWhite_01.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteL01" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteL02" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteL03" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteL04" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteL05" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteR01" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteR02" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteR03" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteR04" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="sideMarker_WhiteR05" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
         <sharedLight linkNode="sideMarkerL01" filename="$data/shared/assets/reflectors/lizard/whiteRectangle_01.xml"/>
         <sharedLight linkNode="sideMarkerR01" filename="$data/shared/assets/reflectors/lizard/whiteRectangle_01.xml"/>
         <realLights>
@@ -251,9 +247,8 @@
         <trailerConfigurations>
             <trailerConfiguration>
                 <trailer>
-                    <tipSide name="info_tipSideBack">
+                    <tipSide name="$l10n_info_tipSideBack">
                         <animation name="tipAnimationBack" speedScale="1"/>
-                        <doorAnimation name="tipAnimationBackDoor"/>
                     </tipSide>
                 </trailer>
             </trailerConfiguration>

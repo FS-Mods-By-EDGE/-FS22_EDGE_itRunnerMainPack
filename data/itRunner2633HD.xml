@@ -10,7 +10,7 @@
         <specs>
             <neededPower>145</neededPower>
             <combination>ITR</combination>
-            <capacity unit="$l10n_unit_kg">6500</capacity>
+            <capacity unitTextOverride="$l10n_unit_kg">6500</capacity>
         </specs>
         <image>store/store_itRunner2633HD.dds</image>
         <price>55000</price>
@@ -26,105 +26,103 @@
         <components>
             <component centerOfMass="0 0.58 -1.5" solverIterationCount="30" mass="6500"/>
         </components>
-        <schemaOverlay attacherJointPosition="0 0">
-            <default name="DEFAULT_IMPLEMENT"/>
-            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
-        </schemaOverlay>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TRAILER" />
     </base>
     <wheels>
         <wheelConfigurations>
             <!--TRELLEBORG-->
-            <wheelConfiguration name="$l10n_configuration_Radial" price="950" brand="TRELLEBORG">
+            <wheelConfiguration name="$l10n_configuration_Radial" price="950" brand="TRELLEBORG" saveId="TRELLEBORG_RADIAL">
                 <wheels>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/710_45R26_5.xml" isLeft="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/710_45R26_5.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/710_45R26_5.xml" isLeft="false">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/710_45R26_5.xml" isLeft="false">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/710_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/710_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="13" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/710_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/710_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="13" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/710_45R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/710_45R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/710_45R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/710_45R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_wideRadial" price="1050" brand="TRELLEBORG">
+            <wheelConfiguration name="$l10n_configuration_wideRadial" price="1050" brand="TRELLEBORG" saveId="TRELLEBORG_WIDERADIAL">
                 <wheels>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/800_40R26_5.xml" isLeft="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/800_40R26_5.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/800_40R26_5.xml" isLeft="false">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/800_40R26_5.xml" isLeft="false">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/800_40R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/800_40R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="13" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/800_40R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/800_40R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="13" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/800_40R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/800_40R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/T404/800_40R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/800_40R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_TwinRadial" price="0" brand="TRELLEBORG">
+            <wheelConfiguration name="$l10n_configuration_TwinRadial" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_TWINRADIAL">
                 <wheels autoRotateBackSpeed="2.0">
-                    <wheel filename="$data/shared/wheels/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="12" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="12" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="10" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="10" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinRadial/710_50R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_TwinForestry" price="1700" brand="TRELLEBORG">
+            <wheelConfiguration name="$l10n_configuration_TwinForestry" price="1700" brand="TRELLEBORG" saveId="TRELLEBORG_TWINFORESTRY">
                 <wheels>
                     <wheel filename="wheels/trelleborg_TwinForestry.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
@@ -154,7 +152,7 @@
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_rough" price="1100" brand="TRELLEBORG">
+            <wheelConfiguration name="$l10n_configuration_rough" price="1100" brand="TRELLEBORG" saveId="TRELLEBORG_ROUGH">
                 <wheels>
                     <wheel filename="wheels/trelleborg_Rough.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
@@ -185,133 +183,133 @@
                 </wheels>
             </wheelConfiguration>
             <!--MICHELIN-->
-            <wheelConfiguration name="$l10n_configuration_CARGOXBIB" brand="MICHELIN">
+            <wheelConfiguration name="$l10n_configuration_CARGOXBIB" brand="MICHELIN" saveId="MICHELIN_CARGO">
                 <wheels autoRotateBackSpeed="2.0">
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="12" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="12" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="10" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="10" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/710_50R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_CXBheavyduty" brand="MICHELIN">
+            <wheelConfiguration name="$l10n_configuration_CXBheavyduty" brand="MICHELIN"  saveId="MICHELIN_HEAVYDUTY">
                 <wheels autoRotateBackSpeed="2.0">
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="12" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="12" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="10" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="10" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHF/710_50R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_wideXBIB" price="1100" brand="MICHELIN">
+            <wheelConfiguration name="$l10n_configuration_wideXBIB" price="1100" brand="MICHELIN" saveId="MICHELIN_WIDE">
                 <wheels>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/800_45R26_5.xml" isLeft="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R26_5.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/800_45R26_5.xml" isLeft="false">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R26_5.xml" isLeft="false">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/800_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/800_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/800_45R26_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R26_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/cargoXBib/800_45R26_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBib/800_45R26_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_megaXbib" price="1100" brand="MICHELIN">
+            <wheelConfiguration name="$l10n_configuration_megaXbib" price="1100" brand="MICHELIN" saveId="MICHELIN_MEGA">
                 <wheels>
-                    <wheel filename="$data/shared/wheels/michelin/megaXbib/750_50R26.xml" isLeft="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/megaXbib/750_50R26.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/megaXbib/750_50R26.xml" isLeft="false">
+                    <wheel filename="$data/shared/wheels/tires/michelin/megaXbib/750_50R26.xml" isLeft="false">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/megaXbib/750_50R26.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/megaXbib/750_50R26.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/megaXbib/750_50R26.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/megaXbib/750_50R26.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/megaXbib/750_50R26.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/megaXbib/750_50R26.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/michelin/megaXbib/750_50R26.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/michelin/megaXbib/750_50R26.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueTwinWheelsNarrow" price="2000" brand="MICHELIN">
+            <wheelConfiguration name="$l10n_configuration_valueTwinWheelsNarrow" price="2000" brand="MICHELIN"  saveId="MICHELIN_TWIN_NARROW">
                 <wheels>
                     <wheel filename="wheels/michelin_TwinNarrow.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
@@ -321,7 +319,7 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
@@ -331,21 +329,21 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/michelin_TwinNarrow.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/michelin_TwinNarrow.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
@@ -353,7 +351,7 @@
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
@@ -372,7 +370,7 @@
 				<objectChange node="hubBackRight3" translationActive="-0.1 0 0"/>
             </wheelConfiguration>
             <!--LIZARD-->
-            <wheelConfiguration name="$l10n_configuration_valueCrawler" brand="LIZARD">
+            <wheelConfiguration name="$l10n_configuration_valueCrawler" brand="LIZARD" saveId="LIZARD_CRAWLER">
                 <wheels autoRotateBackSpeed="2.0">
                     <wheel hasTireTracks="true" hasParticles="true">
                         <physics restLoad="1.1" repr="wheelBackLeft1" forcePointRatio="0.5" radius="0.58" width="0.8" initialCompression="10" suspTravel="0.25" spring="33" damper="200"/>
@@ -388,42 +386,42 @@
                     </wheel>
                 </wheels>
                 <crawlers>
-                    <crawler filename="$data/shared/wheels/tracks/elmer/mfgHaulmasterTrack.xml" linkNode="crawlerLeftLinkNode"  wheelIndex="3" isLeft="true"/>
-                    <crawler filename="$data/shared/wheels/tracks/elmer/mfgHaulmasterTrack.xml" linkNode="crawlerRightLinkNode" wheelIndex="4" isLeft="false"/>
+                    <crawler filename="wheels/lizard/mfgHaulmasterTrack.xml" linkNode="crawlerLeftLinkNode"  wheelIndex="3" isLeft="true"/>
+                    <crawler filename="wheels/lizard/mfgHaulmasterTrack.xml" linkNode="crawlerRightLinkNode" wheelIndex="4" isLeft="false"/>
                 </crawlers>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD">
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD" saveId="LIZARD_DEFAULT">
                 <wheels>
-                    <wheel filename="$data/shared/wheels/lizard/implement/315_80R22_5.xml" isLeft="true">
+                    <wheel filename="$data/shared/wheels/tires/lizard/implement/315_80R22_5.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/lizard/implement/315_80R22_5.xml" isLeft="false">
+                    <wheel filename="$data/shared/wheels/tires/lizard/implement/315_80R22_5.xml" isLeft="false">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/lizard/implement/315_80R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/lizard/implement/315_80R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/lizard/implement/315_80R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/lizard/implement/315_80R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/lizard/implement/315_80R22_5.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/lizard/implement/315_80R22_5.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/lizard/implement/315_80R22_5.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/lizard/implement/315_80R22_5.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
             <!--NOKIAN-->
-            <wheelConfiguration name="$l10n_configuration_Offroad" price="900" brand="NOKIAN">
+            <wheelConfiguration name="$l10n_configuration_Offroad" price="900" brand="NOKIAN" saveId="NOKIAN_OFFROAD">
                 <wheels>
                     <wheel filename="wheels/nokian_Offroad.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
@@ -453,38 +451,38 @@
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueDefault" price="300" brand="NOKIAN">
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="300" brand="NOKIAN" saveId="NOKIAN_DEFAULT">
                 <wheels>
-                    <wheel filename="$data/shared/wheels/nokian/TRI2/540_65R28.xml" isLeft="true">
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/540_65R28.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/nokian/TRI2/540_65R28.xml" isLeft="false">
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/540_65R28.xml" isLeft="false">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/nokian/TRI2/540_65R28.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/540_65R28.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/nokian/TRI2/540_65R28.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/540_65R28.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/nokian/TRI2/540_65R28.xml" isLeft="true" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/540_65R28.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
-                    <wheel filename="$data/shared/wheels/nokian/TRI2/540_65R28.xml" isLeft="false" hasParticles="true">
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/540_65R28.xml" isLeft="false" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
                 </wheels>
             </wheelConfiguration>
             <!--EDGE-->
-            <wheelConfiguration name="$l10n_configuration_rough" price="1000" brand="EDGE">
+            <wheelConfiguration name="$l10n_configuration_rough" price="1000" brand="EDGE" saveId="EDGE_ROUGH">
                 <wheels>
                     <wheel filename="wheels/EDGE_TwinRough.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="33" damper="200"/>
@@ -514,7 +512,7 @@
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1000" brand="EDGE">
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1000" brand="EDGE" saveId="EDGE_BROAD">
                 <wheels>
                     <wheel filename="wheels/EDGE_TwinRadial.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="20" suspTravel="0.25" spring="33" damper="200"/>
@@ -544,7 +542,7 @@
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueDefault" price="300" brand="EDGE">
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="300" brand="EDGE" saveId="EDGE_DEFAULT">
                 <wheels>
                     <wheel filename="wheels/EDGE_Radial.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
@@ -574,7 +572,7 @@
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_Offroad" price="900" brand="EDGE">
+            <wheelConfiguration name="$l10n_configuration_Offroad" price="900" brand="EDGE" saveId="EDGE_OFFROAD">
                 <wheels>
                     <wheel filename="wheels/EDGE_TwinForestry.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
@@ -604,13 +602,13 @@
                     </wheel>
                 </wheels>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueTwinWheelsNarrow" price="2000" brand="EDGE">
+            <wheelConfiguration name="$l10n_configuration_valueTwinWheelsNarrow" price="2000" brand="EDGE" saveId="EDGE_TWIN_NARROW">
                 <wheels>
                     <wheel filename="wheels/EDGE_TwinNarrow.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
@@ -620,7 +618,7 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
@@ -630,21 +628,21 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/EDGE_TwinNarrow.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/EDGE_TwinNarrow.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
@@ -652,7 +650,7 @@
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
@@ -670,7 +668,7 @@
 				<objectChange node="hubBackLeft3" translationActive="0.1 0 0"/>
 				<objectChange node="hubBackRight3" translationActive="-0.1 0 0"/>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_valueWheelNarrow" price="1000" brand="EDGE">
+            <wheelConfiguration name="$l10n_configuration_valueWheelNarrow" price="1000" brand="EDGE" saveId="EDGE_NARROW">
                 <wheels>
                     <wheel filename="wheels/EDGE_Forestry.xml" isLeft="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
@@ -712,6 +710,156 @@
 				<objectChange node="hubBackLeft3" translationActive="0.06 0 0"/>
 				<objectChange node="hubBackRight3" translationActive="-0.06 0 0"/>
             </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="0" brand="BKT" saveId="BKT_BROAD">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_50R26_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_50R26_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="BKT" saveId="BKT_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_45R22_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_45R22_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_45R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_45R22_5.xml" isLeft="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/710_45R22_5.xml" isLeft="false" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="VREDESTEIN" saveId="VREDESTEIN_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_45R22_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_45R22_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_45R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_45R22_5.xml" isLeft="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_45R22_5.xml" isLeft="false" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1500" brand="VREDESTEIN" saveId="VREDESTEIN_BROAD00">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/800_45R30_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/800_45R30_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/800_45R30_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/800_45R30_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/800_45R30_5.xml" isLeft="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/800_45R30_5.xml" isLeft="false" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="0" brand="VREDESTEIN" saveId="VREDESTEIN_BROAD01">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_50R26_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock4" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_50R26_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
+                        <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
+                        <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight02" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_50R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_50R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_50R26_5.xml" isLeft="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/710_50R26_5.xml" isLeft="false" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
+                        <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
         </wheelConfigurations>
         <hubs>
             <color0 useBaseColor="true"/>
@@ -729,7 +877,7 @@
             <inputAttacherJoint node="attacherJoint" jointType="trailerLow" attacherHeight="0.6"/>
         </inputAttacherJoints>
         <support animationName="moveSupport"/>
-        <brakeForce>1.2</brakeForce>
+        <brakeForce force="1.2" maxForce="5" maxForceMass="48000"/>
         <steeringAxleAngleScale startSpeed="5" endSpeed="90" backwards="true"/>
         <toolCameras>
 			<toolCamera node="reverseCamera" rotatable="false" useWorldXZRotation="false" limit="true" rotMinX="-1.1" rotMaxX="1.1" transMin="0" transMax="0" allowHeadTracking="true"/>
@@ -769,7 +917,7 @@
 		</attacherJointConfigurations>
         <sounds>
             <attach template="ATTACH_01"/>
-            <hydraulic template="DEFAULT_HYDRAULIC_SOUND"/>
+            <hydraulic template="defaultHydraulicSound"/>
         </sounds>
     </attacherJoints>
     <dynamicallyLoadedParts>
@@ -805,10 +953,10 @@
     </powerTakeOffs>
     <powerConsumer ptoRpm="300" neededMaxPtoPower="50"/>
     <lights>
-        <sharedLight linkNode="rearMultipointLight_01Right" filename="$data/shared/assets/lights/lizard/rearMultipointLight_01_right.xml"/>
-        <sharedLight linkNode="rearMultipointLight_01Left" filename="$data/shared/assets/lights/lizard/rearMultipointLight_01_left.xml"/>
-        <sharedLight linkNode="workingLightSquare_04" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLightSquare_04.xml"/>
-        <sharedLight linkNode="workingLightSquare_05" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLightSquare_04.xml"/>
+        <sharedLight linkNode="rearLight31Right" filename="$data/shared/assets/lights/lizard/rearLight31_right.xml"/>
+        <sharedLight linkNode="rearLight31Left" filename="$data/shared/assets/lights/lizard/rearLight31_left.xml"/>
+        <sharedLight linkNode="workingLight11" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight11.xml"/>
+        <sharedLight linkNode="workingLightSquare_05" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight11.xml"/>
         <realLights>
             <high>
                 <light node="backLightsHigh1" lightTypes="0"/>
@@ -826,9 +974,13 @@
         </beaconLights>
     </lights>
     <foldable>
-        <foldingParts startMoveDirection="-1" turnOnFoldDirection="-1">
-            <foldingPart animationName="unfoldHand" speedScale="1"/>
-        </foldingParts>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="-1" turnOnFoldDirection="-1">
+                    <foldingPart animationName="unfoldHand" speedScale="1"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
     </foldable>
     <animations>
         <animation name="unfoldHand">
@@ -881,7 +1033,7 @@
             <movingPart node="soundNode" referencePoint="handMovePart" referenceFrame="itRunner_main_component1"/>
         </movingParts>
         <sounds>
-            <hydraulic template="DEFAULT_HYDRAULIC_SOUND"/>
+            <hydraulic template="defaultHydraulicSound"/>
         </sounds>
     </cylindered>
     <licensePlates>
@@ -890,7 +1042,6 @@
     <tipOccluder>
         <occlusionArea start="tipOcclusionArea1Start" width="tipOcclusionArea1Width" height="tipOcclusionArea1Height" />
         <occlusionArea start="tipOcclusionArea2Start" width="tipOcclusionArea2Width" height="tipOcclusionArea2Height" />
-        <occlusionArea start="tipOcclusionArea3Start" width="tipOcclusionArea3Width" height="tipOcclusionArea3Height" />
     </tipOccluder>
     <foliageBending>
         <bendingNode minX="-1.35" maxX="1.35" minZ="-4.9" maxZ="2.55" yOffset="0.6"/>
@@ -1180,9 +1331,9 @@
         <i3dMapping id="containerArmHydraulic" node="0>0|2|1"/>
         <i3dMapping id="containerArmHydraulicPunch" node="0>0|2|1|0"/>
         <i3dMapping id="workingLightSquare_05" node="0>0|3|0|0"/>
-        <i3dMapping id="workingLightSquare_04" node="0>0|3|0|1"/>
-        <i3dMapping id="rearMultipointLight_01Right" node="0>0|3|0|2"/>
-        <i3dMapping id="rearMultipointLight_01Left" node="0>0|3|0|3"/>
+        <i3dMapping id="workingLight11" node="0>0|3|0|1"/>
+        <i3dMapping id="rearLight31Right" node="0>0|3|0|2"/>
+        <i3dMapping id="rearLight31Left" node="0>0|3|0|3"/>
         <i3dMapping id="sideMarkersStatic" node="0>0|3|1|0"/>
         <i3dMapping id="backLightsHigh1" node="0>0|3|2"/>
         <i3dMapping id="reverseLightsHigh1" node="0>0|3|3"/>

@@ -128,7 +128,7 @@
   </Dynamics>
 
   <Scene>
-      <Shape shapeId="1" name="EDGE_itr_Barrel" translation="8.19564e-06 0 2.98023e-06" dynamic="true" compound="true" collisionMask="8397058" density="0.1" clipDistance="800" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="1" name="EDGE_itr_Barrel" translation="8.19564e-06 0 2.98023e-06" dynamic="true" compound="true" collisionMask="10494210" density="0.1" clipDistance="800" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
         <TransformGroup name="wheels" translation="1.81794e-06 0.0899438 -3.31711" nodeId="60">
           <Shape shapeId="2" name="wheels_Right" translation="-0.914225 -1.93715e-07 2.86102e-06" clipDistance="300" nodeId="61" materialIds="13" castsShadows="true" receiveShadows="true">
             <Shape shapeId="3" name="wheels_PerforatedRight" visibility="false" clipDistance="300" nodeId="62" materialIds="13" castsShadows="true" receiveShadows="true"/>
