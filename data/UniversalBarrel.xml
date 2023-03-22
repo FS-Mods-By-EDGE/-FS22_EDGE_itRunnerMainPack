@@ -87,7 +87,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration name="$l10n_configuration_valueDefault" price="0" >
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="LITER" allowAILoading="true" fillTypes="diesel def DIGESTATE LIQUIDMANURE LIQUIDFERTILIZER HERBICIDE WATER MILK" capacity="30000">
+                    <fillUnit shopDisplayUnit="LITER" allowAILoading="true" fillTypeCategories="SLURRYTANK SPRAYER LIQUID" fillTypes="diesel def DIGESTATE LIQUIDMANURE LIQUIDFERTILIZER HERBICIDE WATER MILK" capacity="30000">
                         <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fillLevel"/>
                         <fillMassNode node="frame_ITR"/>
                         <exactFillRootNode node="exactFillRootNode" />
@@ -103,7 +103,7 @@
             </fillUnitConfiguration>
             <fillUnitConfiguration name="$l10n_configuration_HighPressure" price="10000" allowAILoading="true">
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="LITER" allowAILoading="true" fillTypes="diesel def DIGESTATE LIQUIDMANURE LIQUIDFERTILIZER HERBICIDE WATER MILK" capacity="50000">
+                    <fillUnit shopDisplayUnit="LITER" allowAILoading="true" fillTypeCategories="SLURRYTANK SPRAYER LIQUID" fillTypes="diesel def DIGESTATE LIQUIDMANURE LIQUIDFERTILIZER HERBICIDE WATER MILK" capacity="50000">
                         <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fillLevel"/>
                         <fillMassNode node="frame_ITR"/>
                         <exactFillRootNode node="exactFillRootNode" />
