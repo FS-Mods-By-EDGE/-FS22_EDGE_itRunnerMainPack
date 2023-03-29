@@ -2,7 +2,7 @@
 
 <i3D name="Fliegl fuelbarrel" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
   </Asset>
 
   <Files>
@@ -281,6 +281,17 @@
           <TransformGroup name="tipdummy" translation="8.19564e-06 0 2.98023e-06" nodeId="161"/>
           <TransformGroup name="dischargeNode" translation="8.19564e-06 0.17 -3.26789" nodeId="162"/>
           <TransformGroup name="unloadingNode" translation="8.19564e-06 0.17 -3.26789" nodeId="163"/>
+          <TransformGroup name="ai" nodeId="304">
+            <TransformGroup name="aiMarkerLeft" translation="0.9 0 3.8" nodeId="305">
+              <TransformGroup name="aiMarkerRight" translation="-1.8 0 0" nodeId="306"/>
+              <TransformGroup name="aiMarkerBack" translation="-0.9 0 -7" nodeId="307"/>
+            </TransformGroup>
+            <TransformGroup name="sizeMarkerLeft" translation="1 0 4" nodeId="308">
+              <TransformGroup name="sizeMarkerRight" translation="-2 0 0" nodeId="309"/>
+              <TransformGroup name="sizeMarkerBack" translation="-1 0 -7.5" nodeId="310"/>
+            </TransformGroup>
+            <TransformGroup name="aiCollisionNode" translation="0 0 4" nodeId="311"/>
+          </TransformGroup>
         </TransformGroup>
       </Shape>
   </Scene>

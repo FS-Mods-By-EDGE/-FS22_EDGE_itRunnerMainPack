@@ -168,6 +168,13 @@
             <beaconLight node="beaconLight01" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml"/>
         </beaconLights>
     </lights>
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack" />
+        <sizeMarkers leftNode="sizeMarkerLeft" rightNode="sizeMarkerRight" backNode="sizeMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="2" height="1.8"/>
+        <needsLowering value="false"/>
+        <agentAttachment width="2" height="1.8" length="7.5" lengthOffset="0"/>
+    </ai>
 	<foliageBending>
         <bendingNode minX="-1.25" maxX="1.25" minZ="-4.7" maxZ="1.2" yOffset="0.6" />
     </foliageBending>
@@ -435,6 +442,13 @@
     </designMaterialConfigurations>
     <i3dMappings>
         <i3dMapping id="EDGE_itr_Barrel" node="0>" />
+        <i3dMapping id="aiMarkerLeft" node="0>6|4|0"/>
+        <i3dMapping id="aiMarkerRight" node="0>6|4|0|0"/>
+        <i3dMapping id="aiMarkerBack" node="0>6|4|0|1"/>
+        <i3dMapping id="sizeMarkerLeft" node="0>6|4|1"/>
+        <i3dMapping id="sizeMarkerRight" node="0>6|4|1|0"/>
+        <i3dMapping id="aiMarkerBack" node="0>6|4|1|1"/>
+        <i3dMapping id="aiCollisionNode" node="0>6|4|2"/>
         <i3dMapping id="wheels" node="0>0" />
         <i3dMapping id="exactFillRootNode" node="0>5|4" />
         <i3dMapping id="wheels_Right" node="0>0|0" />

@@ -285,7 +285,7 @@
             </TransformGroup>
             <TransformGroup name="aiCollisionNode" translation="0 0 4.3" nodeId="272"/>
           </TransformGroup>
-          <Camera name="persp" translation="-0.598084 12.3971 5.14408" rotation="90 0 180" visibility="false" nodeId="143" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+          <Camera name="persp" translation="0.651916 12.3971 -0.155916" rotation="90 0 180" visibility="false" nodeId="143" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
         </Shape>
         <TransformGroup name="collisions" nodeId="144">
           <Shape shapeId="21" name="colAttacher" translation="-3.8147e-08 0.627 2.25479" visibility="false" compoundChild="true" collisionMask="8194" linearDamping="0.5" angularDamping="0.5" density="0.01" nodeId="145" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>

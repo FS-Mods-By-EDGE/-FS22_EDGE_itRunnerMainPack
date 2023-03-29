@@ -309,7 +309,7 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
@@ -319,7 +319,7 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
@@ -329,21 +329,21 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/michelin_TwinNarrow.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/michelin_TwinNarrow.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
@@ -351,7 +351,7 @@
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/michelin_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
@@ -608,7 +608,7 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft1" driveNode="wheelBackLeft1Node" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChock3"/>
@@ -618,7 +618,7 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight1" forcePointRatio="0.5" initialCompression="24" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="0.3" rotMax="5" rotMin="-5"/>
                         <wheelChock filename="wheels/wheelChock.i3d" parkingNode="wheelChockRight01"/>
@@ -628,21 +628,21 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackLeft2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/EDGE_TwinNarrow.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelBackRight2" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="33" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                     </wheel>
                     <wheel filename="wheels/EDGE_TwinNarrow.xml" isLeft="true" hasParticles="true">
                         <physics restLoad="1.2" repr="wheelBackLeft3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
@@ -650,7 +650,7 @@
                         <physics restLoad="1.2" repr="wheelBackRight3" forcePointRatio="0.5" initialCompression="09" suspTravel="0.25" spring="45" damper="200"/>
                         <innerRim offset="0.1"/>
                         <additionalWheel filename="wheels/EDGE_TwinNarrow.xml" configId="dual" offset="0.08" >
-                            <connector filename="$data/shared/wheels/tires/rims/dual001_2.xml"/>
+                            <connector filename="$data/shared/wheels/rims/dual001_2.xml"/>
                         </additionalWheel>
                         <steeringAxle scale="-0.7" rotMax="15" rotMin="-15"/>
                     </wheel>
