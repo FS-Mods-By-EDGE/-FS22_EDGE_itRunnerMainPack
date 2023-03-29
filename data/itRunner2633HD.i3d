@@ -2,7 +2,7 @@
 
 <i3D name="ITR 26.33 HD" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
   </Asset>
 
   <Files>
@@ -274,7 +274,18 @@
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="licensePlate" translation="0.966169 0.796176 -4.6673" rotation="180 -5.00896e-06 180" scale="1.1 1.1 1" nodeId="142"/>
-          <Camera name="persp" translation="1.5698 2.00837 -7.72075" rotation="157.918 12.1247 -180" visibility="false" nodeId="143" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+          <TransformGroup name="ai" translation="0 0 -0.401416" nodeId="265">
+            <TransformGroup name="aiMarkerLeft" translation="1.3 0 2.9" nodeId="266">
+              <TransformGroup name="aiMarkerRight" translation="-2.6 0 0" nodeId="267"/>
+              <TransformGroup name="aiMarkerBack" translation="-1.3 0 -8.17416" nodeId="268"/>
+            </TransformGroup>
+            <TransformGroup name="sizeMarkerLeft" translation="1.5 0 3" nodeId="269">
+              <TransformGroup name="sizeMarkerRight" translation="-3 0 0" nodeId="270"/>
+              <TransformGroup name="sizeMarkerBack" translation="-1.5 0 -8.2" nodeId="271"/>
+            </TransformGroup>
+            <TransformGroup name="aiCollisionNode" translation="0 0 4.3" nodeId="272"/>
+          </TransformGroup>
+          <Camera name="persp" translation="-0.598084 12.3971 5.14408" rotation="90 0 180" visibility="false" nodeId="143" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
         </Shape>
         <TransformGroup name="collisions" nodeId="144">
           <Shape shapeId="21" name="colAttacher" translation="-3.8147e-08 0.627 2.25479" visibility="false" compoundChild="true" collisionMask="8194" linearDamping="0.5" angularDamping="0.5" density="0.01" nodeId="145" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>

@@ -1036,6 +1036,13 @@
             <hydraulic template="defaultHydraulicSound"/>
         </sounds>
     </cylindered>
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack" />
+        <sizeMarkers leftNode="sizeMarkerLeft" rightNode="sizeMarkerRight" backNode="sizeMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="2.6" height="1"/>
+        <needsLowering value="false"/>
+        <agentAttachment width="2.6" height="1" length="8" lengthOffset="0"/>
+    </ai>
     <licensePlates>
         <licensePlate node="licensePlate" position="BACK" preferedType="ELONGATED" placementArea="0.07 0.18 0.14 0.18"/>
     </licensePlates>
@@ -1290,6 +1297,13 @@
         <i3dMapping id="itRunner_main_component1" node="0>"/>
         <i3dMapping id="towHolder" node="0>0|5|3|0"/>
         <i3dMapping id="licensePlate" node="0>0|9"/>
+        <i3dMapping id="aiMarkerLeft" node="0>0|10|0"/>
+        <i3dMapping id="aiMarkerRight" node="0>0|10|0|0"/>
+        <i3dMapping id="aiMarkerBack" node="0>0|10|0|1"/>
+        <i3dMapping id="sizeMarkerLeft" node="0>0|10|1"/>
+        <i3dMapping id="sizeMarkerRight" node="0>0|10|1|0"/>
+        <i3dMapping id="aiMarkerBack" node="0>0|10|1|1"/>
+        <i3dMapping id="aiCollisionNode" node="0>0|10|2"/>
         <i3dMapping id="tipOcclusionArea2Start" node="0>0|8|1|0"/>
         <i3dMapping id="tipOcclusionArea1Start" node="0>0|8|0|0"/>
         <i3dMapping id="tipOcclusionArea1Width" node="0>0|8|0|0|0"/>
